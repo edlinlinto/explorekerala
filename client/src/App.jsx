@@ -77,7 +77,7 @@ const [search, setSearch] = useState("");
 const [category, setCategory] = useState("All");
 const [apiDestinations, setApiDestinations] = useState([]);
 useEffect(() => {
-fetch("http://localhost:5000/api/destinations")
+fetch("https://explorekerala-dlmw.onrender.com/api/destinations")
 .then((response) => {
 if (!response.ok) {
 throw new Error("Failed to fetch destinations");
